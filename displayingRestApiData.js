@@ -46,7 +46,7 @@ function displayCountryCards(res){
 function getWeatherdata(Capital){
     
       //console.log(temp)
-            let a = `http://api.openweathermap.org/data/2.5/weather?q=${Capital}&appid=4845eae592bc4361e1188544444f8109&units=metric`
+            let a = `https://api.openweathermap.org/data/2.5/weather?q=${Capital}&appid=4845eae592bc4361e1188544444f8109&units=metric`
             fetch(a)
             .then(response => {
                 return response.json();
